@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Thiết kế web với HTML và CSS</title>
+    <style>
+        /* Reset lề */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1, h2 { text-align: center; margin-bottom: 10px; }
+
+        table {
+            width: 950px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        #title_table {
+            color: blue;
+            font-size: 22pt;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Cột bên trái chứa danh sách */
+        #left_col {
+            vertical-align: top;
+            width: 250px;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        /* TẠO THANH CUỘN CHO DANH SÁCH */
+        .list-container {
+            height: 550px; /* Chiều cao cố định */
+            overflow-y: auto; /* Hiện thanh cuộn khi danh sách dài */
+        }
+
+        ol { list-style-type: none; }
+        ol li {
+            margin-bottom: 5px;
+            background-color: white;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        ol li:hover { background-color:#e3f2fd; }
+        ol li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        ol li:hover a { color: purple; }
+
+        /* Cột bên phải chứa nội dung */
+        #right_col { vertical-align: top; }
+        
+        /* IFRAME: Quan trọng là src phải để trống hoặc about:blank */
+        iframe {
+            width: 100%;
+            height: 570px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Trang chủ</h1>
+    
+
+    <table border="1">
+        <tr>
+            <td id="title_table" colspan="2">Danh sách sinh viên lớp DA25TTA</td>
+        </tr>
+        <tr>
+            <td id="left_col">
+                <div class="list-container">
+                    <ol>
+                     <li>
+			<a target="content" href="110125245.html">110125245 - Lý Hồng Linh</a>
+		    </li>
+
+		    <li>
+			<a target="content" href="110124184.html">110124184</a> Nguyễn Thị Thanh Thúy
+		    </li>
+		    <li>
+			<a target="content" href="110124188.html">110124188</a> Dư Trung Tín
+		    </li>
+		    <li>
+			<a target="content" href="110124198.html">110124198</a> Nguyễn Thị Thùy Trang
+		    </li>  
+		    <li>
+                        <a target="content" href="110124215.html">110124215</a> Huỳnh Quang Vinh
+                    </li>
+		    <li>
+                        <a target="content" href="110124255.html">110124255</a> Võ Hoàng Tuấn
+                    </li>
+		    <li>
+                        <a target="content" href="110125002.html">110125002</a> Nguyễn Bình AN
+                    </li>
+		    <li>
+                        <a target="content" href="110125012.html">110125012</a> Hồ Chí Bảo
+                    </li>
+		    <li>
+                        <a target="content" href="110125016.html">110125016</a> Nguyễn Huỳnh Gia Bảo
+                    </li>
+		    <li>
+                        <a target="content" href="110125017.html">110125017</a> NGUYỄN THIÊN BẢO
+                    </li>
+		    <li>
+                        <a target="content" href="110125035.html">110125035</a> Trình Quốc Đạt
+                    </li>
+		    <li>
+                        <a target="content" href="110125043.html">110125043</a> Phan Thúy Duy
+                    </li>
+		    <li>
+                        <a target="content" href="110125052.html">110125052</a> THẠCH SƠN HẠP
+                    </li>
+	            <li>
+                        <a target="content" href="110125056.html">110125056</a> Huỳnh Trát Hoa
+                    </li>
+		    <li>
+                        <a target="content" href="110125065.html">110125065</a> Võ Văn Thiên Hữu
+                    </li>
+		    <li>
+                        <a target="content" href="110125078.html">110125078</a> Đoàn Nhựt Khang
+                    </li>
+		    <li>
+                        <a target="content" href="110125085.html">110125085</a> Tăng huỳnh anh khoa
+                    </li>
+		    <li>
+                        <a target="content" href="110125093.html">110125093</a> Nguyễn Quốc Huy Khương
+                    </li>
+		    <li>
+                        <a target="content" href="110125100.html">110125100</a> Trương Quốc Lực
+                    </li>
+		    <li>
+                        <a target="content" href="110125104.html">110125104</a> Kiên Thị Huệ Minh
+                    </li>
+		    <li>
+                        <a target="content" href="110125132.html">110125132</a> Nguyễn Gia Phú
+                    </li>
+		    <li>
+                        <a target="content" href="110125141.html">110125141</a> Đinh Thị Mỹ Quyên
+                    </li>
+		    <li>
+                        <a target="content" href="110125145.html">110125145</a> Nguyễn kiều quốc tâm
+                    </li>
+		    <li>
+                        <a target="content" href="110125157.html">110125157</a> Đặng Ngọc Thảo
+                    </li>
+		    <li>
+                        <a target="content" href="110125161.html">110125161</a> Trịnh Minh Thiện
+                    </li>
+		    <li>
+			<a target="content" href="110125167.html">110125167</a> Huỳnh Phú Thọ
+                    </li>
+		      <li>
+                        <a target="content" href="110125170.html">110125170</a> Phạm Thị Minh Thư
+                    </li>
+		    <li>
+                        <a target="content" href="110125171.html">110125171</a> TRƯƠNG ANH THƯ
+                    </li>
+		    <li>
+                        <a target="content" href="110125190.html">110125190</a> Nguyễn Minh Triết
+                    </li>
+		    <li>
+                        <a target="content" href="110125201.html">110125201</a>  Hà Chí Tường
+                    </li>
+		    <li>
+                        <a target="content" href="10125207.html">110125207</a> THẠCH THỊ NHỰT VI
+                    </li>
+		    <li>
+                        <a target="content" href="110125208.html">110125208</a> Từ Thế Viễn
+                    </li>
+		    <li>
+                        <a target="content" href="110125209.html">110125209</a> Võ Quang Viễn
+                    </li>
+		    <li>
+                        <a target="content" href="110125213.html">110125213</a> Đổ Thị Như Ý
+                    </li>
+		    <li>
+                        <a target="content" href="110125222.html">110125222</a> Nguyễn Minh Đức
+                    </li>
+		    <li>
+                        <a target="content" href="110125228.html">110125228</a> Lê Nguyễn Gia Huy
+                    </li>
+		      <li>
+                        <a target="content" href="110125230.html">110125230</a> Phạm Nguyễn Long Hưng
+                    </li>
+		    <li>
+                        <a target="content" href="110125242.html">110125242</a> Sơn Ngọc Phương Lan
+                    </li>
+		    <li>
+                        <a target="content" href="110125253.html">110125253</a> Nguyễn Trung Minh
+                    </li>
+		    <li>
+                        <a target="content" href="110125254.html">110125254</a> Võ Hoàng Minh
+                    </li>
+		    <li>
+                        <a target="content" href="110125273.html">110125273</a> Nguyễn Đình Thụ
+                    </li>
+		    <li>
+                        <a target="content" href="110125277.html">110125277</a> Nguyễn Hồ Thuỷ Trúc
+                    </li>
+		     <li>
+                        <a target="content" href="110125283.html">110125283</a> Nguyễn Huỳnh Như Ý
+                    </li>                     
+		    </ol>
+                </div>
+            </td>
+            <td id="right_col">
+                <iframe name="content" src="about:blank"></iframe>
+            </td>
+        </tr>
+    </table>
+	<script>
+    function showStudent(mssv, photoName) {
+        // 1. Hiện cái khung chứa ảnh lên
+        var photoBox = document.getElementById('photo-box');
+        photoBox.style.display = 'block';
+        
+        // 2. Gắn ảnh vào khung (Nhớ kiểm tra tên file ảnh trong folder img)
+        document.getElementById('main-photo').src = 'img/' + photoName;
+        
+        // 3. Mở file của các bạn trong iframe
+        var fileToOpen = 'html/' + mssv + '.html';
+        
+        // Riêng mã số của Linh thì file nằm ngoài, không nằm trong folder html
+        if (mssv === '110125245') {
+            fileToOpen = '110125245.html'; 
+        }
+        
+        window.open(fileToOpen, 'view_frame');
+    }
+</script>
+</body>
+</html>
